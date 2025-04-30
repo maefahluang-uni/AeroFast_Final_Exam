@@ -1,8 +1,8 @@
 Name:  Thiha Lin
 ID: 6631503092  
-App Name: Aerofast  
+App Name: AeroFast  
 FrameWork used: React Native  
-GitHub Repository: [Click Here\!](https://github.com/6631503088/mobile_final_exam)  
+GitHub Repository: [Click Here\!](https://github.com/maefahluang-uni/AeroFast_Final_Exam)  
 APK/IPA: [Click Here\!](https://drive.google.com/file/d/1sUDa6YoZOlxB8GJ9G64CGcckDYOcBSmW/view?usp=sharing)  
 —------------------------------------------------------------------------------------------------------------------  
 **1.App Concept and Design**  
@@ -116,18 +116,23 @@ Open app ➔ Login or Register ➔ Browse pages and progress ➔ Select a workou
 **2.3 App Screenshots**
 
 **Sign In / Sign Up Screen:**
+
 <img src="https://i.ibb.co/S7J6D30v/Screenshot-2025-04-30-19-39-16-26-48a9ae814f9b029943ae85085b7d6dfa.jpg" alt="Sign In / Sign Up" width="150"/>
 
 **Home Page:**
+
 <img src="https://i.ibb.co/5xzVzTWN/Screenshot-2025-04-30-19-35-19-46-48a9ae814f9b029943ae85085b7d6dfa.jpg" alt="Home Page" width="150/">
 
 **Analysis Page:**
+
 <img src="https://i.ibb.co/zWxhpMwd/Screenshot-2025-04-30-19-36-47-05-48a9ae814f9b029943ae85085b7d6dfa.jpg" alt="Analysis Page" width="150/">
 
 **Workout Detail Page:**
+
 <img src="https://i.ibb.co/q3T6Ys4Y/Screenshot-2025-04-30-19-35-49-14-48a9ae814f9b029943ae85085b7d6dfa.jpg" alt="Workout Detail" width="150/">
 
 **Plan Page (Workout Lists):**
+
 <img src="https://i.ibb.co/zgFWR2W/Screenshot-2025-04-30-19-43-45-72-48a9ae814f9b029943ae85085b7d6dfa.jpg" alt="Plan Page" width="150/">
 
 —------------------------------------------------------------------------------------------------------------------

@@ -1,79 +1,203 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+Name:  Thiha Lin
+ID: 6631503092  
+App Name: Aerofast  
+FrameWork used: React Native  
+GitHub Repository: [Click Here\!](https://github.com/6631503088/mobile_final_exam)  
+APK/IPA: [Click Here\!](https://drive.google.com/file/d/1sUDa6YoZOlxB8GJ9G64CGcckDYOcBSmW/view?usp=sharing)  
+—------------------------------------------------------------------------------------------------------------------  
+**1.App Concept and Design**  
+**1.1 User Personas**
 
-# Getting Started
+Persona 1:
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+- Name: Mark
 
-## Step 1: Start the Metro Server
+- Age: 25
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+- Occupation: Software Engineer
 
-To start Metro, run the following command from the _root_ of your React Native project:
+- Needs: Wants to track fitness progress and squeeze short workouts during breaks.
 
-```bash
-# using npm
-npm start
+Persona 2:
 
-# OR using Yarn
-yarn start
-```
+- Name: Sarah
 
-## Step 2: Start your Application
+- Age: 20
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+- Occupation: University Student
 
-### For Android
+- Needs: Needs guided daily routines to improve consistency and flexibility.
 
-```bash
-# using npm
-npm run android
+  **1.2 App Goals**
 
-# OR using Yarn
-yarn android
-```
+- Help users stay active and build a consistent fitness habit.
 
-### For iOS
+- Track user progress with steps, calories, workout time, and distance.
 
-```bash
-# using npm
-npm run ios
+- Provide daily training programs including warm-up, cool-down, challenges, and stretching.
 
-# OR using Yarn
-yarn ios
-```
+- Allow users to plan routines, monitor performance, and analyze history.
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+**1.3 Some main pages for mockup**  
+Sign In / Sign Up Screen
 
-## Step 3: Modifying your App
+- Supports email/password login and Google login.
+- Simple and accessible UI for onboarding.
 
-Now that you have successfully run the app, let's modify it.
+Home Screen
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+- Displays steps, calories burned, and today's training sessions.
+- Suggests workout challenges like "Plank", "Chest", and "Burn 100 cal".
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+Plan Screen
 
-## Congratulations! :tada:
+- Workout programs with durations and reps (e.g., Bicep Curls, Triceps, Pull-ups).
+- Displays assigned virtual coaches based on workout goals.
 
-You've successfully run and modified your React Native App. :partying_face:
+Profile Screen
 
-### Now what?
+- Personal info (Name, Gender, Height, Weight).
+- Options to reset progress, manage coach, privacy policy, and logout.
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+Exercise Detail Screen
 
-# Troubleshooting
+- Each program shows exercise name, duration, and instructions.
+- Workout flow: Warm-up ➝ Core workout ➝ Cool-down.
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+**1.4 User Flow**
 
-# Learn More
+Open app ➔ Login or Register ➔ Browse pages and progress ➔ Select a workout ➔ Follow up Instructions ➔ Upgrade Progress with daily routines
 
-To learn more about React Native, take a look at the following resources:
+—------------------------------------------------------------------------------------------------------------------  
+**2.App Implementation**  
+**2.1 Development Details**
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+- Tools used
+
+  - react-native@0.79.1
+
+  - Packages:
+
+{
+  "@react-navigation/native": "^6.1.17",
+  "@react-navigation/stack": "^6.3.29",
+  "@react-navigation/bottom-tabs": "^6.5.20",
+  "@react-native-masked-view/masked-view": "^0.3.1",
+  "@shopify/flash-list": "^1.6.4",
+  "@shopify/restyle": "^2.4.4",
+  "expo": "^52.0.46",
+  "moment": "^2.30.1",
+  "react": "18.2.0",
+  "react-native": "0.74.1",
+  "react-native-calendars": "^1.1305.0",
+  "react-native-chart-kit": "^6.12.0",
+  "react-native-circular-progress": "^1.4.0",
+  "react-native-gesture-handler": "^2.16.1",
+  "react-native-gifted-charts": "^1.4.10",
+  "react-native-linear-gradient": "^2.8.3",
+  "react-native-modal": "^13.0.1",
+  "react-native-progress": "^5.0.1",
+  "react-native-ruler-picker": "^0.2.2",
+  "react-native-safe-area-context": "^4.10.1",
+  "react-native-svg": "^15.2.0"
+}
+
+
+**2.2 Features Implemented**
+
+- Checked list
+  - User Authentication (Email, Password, Google Login) \=\> \[**YES**\]
+  - Profile Management – Users can update gender, height, weight; reset or delete data \=\> \[**YES**\]
+  - Detailed Exercise Plans – Each workout includes duration, reps/sets, and video guidance	 \=\> \[**YES**\]
+  - Workout History & Calendar View – Users can review past workout activity	 \=\> \[**YES**\]
+  - Bottom Tab Navigation – Seamless switching between Home, Plan, GPS, Analysis, and Profile \=\> \[**YES**\]
+
+**2.3 App Screenshots**
+
+**Sign In / Sign Up Screen:**
+<img src="https://i.ibb.co/S7J6D30v/Screenshot-2025-04-30-19-39-16-26-48a9ae814f9b029943ae85085b7d6dfa.jpg" alt="Sign In / Sign Up" width="150"/>
+
+**Home Page:**
+<img src="https://i.ibb.co/5xzVzTWN/Screenshot-2025-04-30-19-35-19-46-48a9ae814f9b029943ae85085b7d6dfa.jpg" alt="Home Page" width="150/">
+
+**Analysis Page:**
+<img src="https://i.ibb.co/zWxhpMwd/Screenshot-2025-04-30-19-36-47-05-48a9ae814f9b029943ae85085b7d6dfa.jpg" alt="Analysis Page" width="150/">
+
+**Workout Detail Page:**
+<img src="https://i.ibb.co/q3T6Ys4Y/Screenshot-2025-04-30-19-35-49-14-48a9ae814f9b029943ae85085b7d6dfa.jpg" alt="Workout Detail" width="150/">
+
+**Plan Page (Workout Lists):**
+<img src="https://i.ibb.co/zgFWR2W/Screenshot-2025-04-30-19-43-45-72-48a9ae814f9b029943ae85085b7d6dfa.jpg" alt="Plan Page" width="150/">
+
+—------------------------------------------------------------------------------------------------------------------
+
+**3.Build|Deployment**
+
+**3.1 Build Type**
+
+- Debug \=\> \[**YES**\]
+
+**3.2 Platform Tested**
+
+- Android \=\> \[**YES**\]
+
+**3.3 ReadMe and Install Guide**
+
+- Download the .apk file.
+- Open the file using your Android device.
+- Install the app via the File Manager.
+
+—------------------------------------------------------------------------------------------------------------------
+
+**4\. Reflection**
+
+- I also struggled with maintaining user sessions; the app would occasionally forget the login state after a restart.
+
+- I learned how to use React Navigation and modularize UI components for better scalability
+
+- If I had more time, I would implement Firebase for cloud sync and notification reminders.
+
+—------------------------------------------------------------------------------------------------------------------
+
+**5.AI Assisted Development**
+
+**5.1 AI for Idea Generation**
+
+Prompt used: "Give me mobile app idea related to fitness and workout with gps and tracking"
+
+Result: Got the concept of daily fitness tracker with exercise log and calories burned.
+
+**5.2 AI for UI Design**
+
+Prompt used: "How to design bottom tab navigation ui for fitness app in react native""
+
+Result:  Helped plan the layout with Home, Plan, GPS, Analysis, and Profile tabs.
+
+- Home Page 
+
+- Plan Page 
+
+- Analysis Page
+
+- Profile Page
+
+**5.3 AI for Code writing**
+
+Prompt used: "react native code for circular progress step tracker"
+
+Result: Used code to show exercieses and calorie charts with updates
+
+**5.4 AI for Debugging**
+
+Prompt used: "google login not working in expo app", "navigation doesn’t wait for login data"
+
+Result: Fixed auth flow delay and found out it was promise not awaited properly.
+
+**5.5 AI for Deployment**
+
+Prompt used: "how to build apk from expo project"
+
+Result: Followed eas build steps and managed to install APK on Android device.
+
+—------------------------------------------------------------------------------------------------------------------
